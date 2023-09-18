@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">dogglersez</string>
+    <string name="age">Age: %1$s</string>
+    <string name="hobbies">Hobbies: %1$s</string>
 </resources>

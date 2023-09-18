@@ -14,5 +14,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.recyclerView.adapter = DogCardAdapter(this, 1)
+getString(R.string.age, 5)
+
     }
 }

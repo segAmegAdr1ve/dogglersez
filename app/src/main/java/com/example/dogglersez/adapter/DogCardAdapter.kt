@@ -10,21 +10,25 @@ import com.example.dogglersez.data.DataSource
 import com.example.dogglersez.databinding.VerticalHorizontalListItemBinding
 import com.example.dogglersez.model.Dog
 
+
+
 class DogCardAdapter(
-    private val context: Context,
+    val context: Context,
     private val layout: Int
 ): RecyclerView.Adapter<DogCardAdapter.DogCardViewHolder>() {
 
-    val dataSource = DataSource
+    private val dataSource = DataSource
+    val a = context.getApplicationContext()
 
-    class DogCardViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    class DogCardViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
+
         private val binding = VerticalHorizontalListItemBinding.bind(view)
 
         fun bind(dog: Dog) = with(binding) {
             imageView.setImageResource(dog.imageResourceId)
             textName.text = dog.name
-            textAge.text = "Age: ${dog.age}"
-            textHobbies.text = "Hobbies: ${dog.hobbies}"
+            textAge.text =  view.context.getString(R.string.age,dog.age)
+            textHobbies.text = view.context.getString(R.string.hobbies,dog.hobbies)
         }
     }
 
