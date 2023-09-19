@@ -14,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/image_view"
             android:layout_width="wrap_content"
             android:layout_height="194dp"
             android:scaleType="centerCrop"
@@ -24,7 +24,7 @@
             app:srcCompat="@drawable/leroy" />
 
         <TextView
-            android:id="@+id/text_name_grid"
+            android:id="@+id/text_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -32,11 +32,11 @@
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/image_view"
             tools:text="Leroy" />
 
         <TextView
-            android:id="@+id/text_age_grid"
+            android:id="@+id/text_age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -44,26 +44,27 @@
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_name_grid"
+            app:layout_constraintTop_toBottomOf="@+id/text_name"
             tools:text="Age: 4" />
 
         <TextView
-            android:id="@+id/text_hobbies_grid"
+            android:id="@+id/text_hobbies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
+            android:paddingEnd="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:gravity=""
+            android:gravity="start"
             android:text="TextView"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_age_grid"
+            app:layout_constraintTop_toBottomOf="@+id/text_age"
             app:layout_constraintVertical_bias="1.0"
-            tools:text="Hobbies: sleeping in dangerous places"/>
+            tools:text="Hobbies: sleeping in dangerous places" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
