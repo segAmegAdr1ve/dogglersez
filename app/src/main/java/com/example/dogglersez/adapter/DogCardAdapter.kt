@@ -26,7 +26,7 @@ class DogCardAdapter(
         val bindingG = if (layout == Layout.GRID) {
             GridListItemBinding.bind(view)
         } else null
-        val bindingVH = if (layout !== Layout.GRID) {
+        val bindingVH = if (layout == Layout.VERTICAL || layout == Layout.HORIZONTAL) {
             VerticalHorizontalListItemBinding.bind(view)
         } else null
 
